@@ -8,6 +8,9 @@
 # this is only for the mariadbd daemon
 [mariadbd]
 
+# run SQL init script on startup to create wordpress db/user
+init_file               = /etc/mysql/mariadb.conf.d/init.sql
+
 #
 # * Basic Settings
 #
