@@ -153,5 +153,8 @@ $testFramework->add('page render placeholders', 'testPageRenderPlaceholders');
 // run tests
 $testFramework->run();
 
-echo $testFramework->getResult();
+echo $testFramework->getResult() . PHP_EOL;
+
+// CI marks the build as failed only on a non-zero exit code
+exit($testFramework->isSuccess() ? 0 : 1);
 

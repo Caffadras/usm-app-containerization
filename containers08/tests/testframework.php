@@ -43,5 +43,9 @@ class TestFramework {
     public function getResult() {
         return "{$this->success} / " . count($this->tests);
     }
+
+    public function isSuccess(): bool {
+        return $this->success === count($this->tests);
+    }
 }
 
