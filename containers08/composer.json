@@ -1,0 +1,15 @@
+{
+    "name": "caffadras/containers08",
+    "description": "PHP site with SQLite from lab 8",
+    "type": "project",
+    "require": {
+        "php": ">=8.2",
+        "ext-pdo_sqlite": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "classmap": ["site/modules/"]
+    }
+}
